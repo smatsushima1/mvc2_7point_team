@@ -1,0 +1,57 @@
+id,character,point,a1,a2,a3
+1,Akuma,2,Projectile,Anti-Air,Expansion
+2,Amingo,1,Heal,Enhance,Balance
+3,Anakaris,2,Ground,Throw,Variety
+4,B.B. Hood,2,Projectile,Anti-Air,Variety
+5,Blackheart,4,Ground,Anti-Air,Launcher
+6,Cable,5,Projectile,Anti-Air,Variety
+7,Cammy,4,Anti-Air,Dash,Expansion
+8,Captain America,1,Projectile,Anti-Air,Dash
+9,Captain Commando,4,Ground,Anti-Air,Expansion
+10,Charlie,2,Projectile,Anti-Air,Balance
+11,Chun-Li,1,Projectile,Anti-Air,Expansion
+12,Colossus,3,Dash,Anti-Air,Launcher
+13,Cyclops,4,Projectile,Anti-Air,Expansion
+14,Dan,1,Projectile,Anti-Air,Variety
+15,Dhalsim,4,Projectile,Ground,Anti-Air
+16,Dr. Doom,4,Variety,Anti-Air,Projectile
+17,Felicia,2,Expansion,Ground,Variety
+18,Gambit,2,Projectile,Expansion,Launcher
+19,Guile,3,Anti-Air,Projectile,Balance
+20,Hayato,1,Expansion,Anti-Air,Balance
+21,Hulk,2,Ground,Dash,Anti-Air
+22,Iceman,3,Projectile,Variety,Balance
+23,Iron Man,5,Projectile,Anti-Air,Launcher
+24,Jill,3,Heal,Dash,Projectile
+25,Jin Saotome,2,Expansion,Anti-Air,Launcher
+26,Juggernaut,3,Ground,Dash,Variety
+27,Ken,2,Anti-Air,Projectile,Expansion
+28,M. Bison,2,Projectile,Variety,Expansion
+29,Magneto,5,Projectile,Capture,Launcher
+30,Marrow,2,Projectile,Anti-Air,Expansion
+31,Mega Man,3,Projectile,Anti-Air,Balance
+32,Morrigan,2,Anti-Air,Projectile,Balance
+33,Omega Red,3,Throw,Anti-Air,Ground
+34,Psylocke,4,Anti-Air,Projectile,Balance
+35,Rogue,3,Anti-Air,Dash,Throw
+36,Roll,0,Projectile,Variety,Balance
+37,Ruby Heart,3,Anti-Air,Capture,Enhance
+38,Ryu,2,Anti-Air,Projectile,Expansion
+39,Sabretooth,2,Expansion,Projectile,Launcher
+40,Sakura,2,Dash,Projectile,Expansion
+41,Sentinel,5,Projectile,Launcher,Ground
+42,Servbot,1,Projectile,Anti-Air,Balance
+43,Shuma-Gorath,1,Projectile,Expansion,Balance
+44,Silver Samurai,3,Ground,Projectile,Balance
+45,Sonson,2,Heal,Projectile,Anti-Air
+46,Spider-Man,2,Capture,Expansion,Anti-Air
+47,Spiral,5,Projectile,Variety,Ground
+48,Storm,5,Projectile,Expansion,Variety
+49,Strider,4,Ground,Variety,Projectile
+50,Thanos,2,Capture,Dash,Launcher
+51,Tron Bonne,4,Throw,Anti-Air,Projectile
+52,Venom,2,Expansion,Variety,Launcher
+53,War Machine,4,Projectile,Anti-Air,Variety
+54,Wolverine (Adamantium),1,Expansion,Anti-Air,Dash
+55,Wolverine (Bone),1,Ground,Launcher,Variety
+56,Zangief,2,Ground,Throw,Air Throw
