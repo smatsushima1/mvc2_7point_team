@@ -69,28 +69,27 @@ def gen_team():
     ch1_name = ch1[1]
     ch1_point = ch1[2]
     ch1_assist = ch1[random.randrange(0,2) + 3]
-    print('%s, %s Type (%s)' % (ch1_name, ch1_assist, ch1_point))
     # Get second character
     second = gen_char2(all_characters,
-                      int(first),
+                      first,
                       int(ch1_point))
     ch2 = all_characters[second]
     ch2_name = ch2[1]
     ch2_point = ch2[2]
     ch2_assist = ch2[random.randrange(0,2) + 3]
-    print('%s, %s Type (%s)' % (ch2_name, ch2_assist, ch2_point))
     # Get third character
     third = gen_char3(all_characters,
-                     int(first),
+                     first,
                      int(ch1_point),
-                     int(second),
+                     second,
                      int(ch2_point))
     ch3 = all_characters[third]
     ch3_name = ch3[1]
     ch3_point = ch3[2]
     ch3_assist = ch3[random.randrange(0,2) + 3]
+    print('%s, %s Type (%s)' % (ch1_name, ch1_assist, ch1_point))   
+    print('%s, %s Type (%s)' % (ch2_name, ch2_assist, ch2_point))    
     print('%s, %s Type (%s)' % (ch3_name, ch3_assist, ch3_point))
-
 
 
 ################################################################################
@@ -164,7 +163,6 @@ def gen_team2():
     ch1_name = ch1['name']
     ch1_point = ch1['points']
     ch1_assist = ch1[random.choice(['assist_1', 'assist_2', 'assist_3'])]
-    print('%s, %s Type (%s)' % (ch1_name, ch1_assist, ch1_point))
     # Get second character
     second = gen_char2j(all_characters,
                        first,
@@ -173,7 +171,6 @@ def gen_team2():
     ch2_name = ch2['name']
     ch2_point = ch2['points']
     ch2_assist = ch2[random.choice(['assist_1', 'assist_2', 'assist_3'])]
-    print('%s, %s Type (%s)' % (ch2_name, ch2_assist, ch2_point))
     # Get third character
     third = gen_char3j(all_characters,
                       first,
@@ -184,6 +181,8 @@ def gen_team2():
     ch3_name = ch3['name']
     ch3_point = ch3['points']
     ch3_assist = ch3[random.choice(['assist_1', 'assist_2', 'assist_3'])]
+    print('%s, %s Type (%s)' % (ch1_name, ch1_assist, ch1_point))    
+    print('%s, %s Type (%s)' % (ch2_name, ch2_assist, ch2_point))    
     print('%s, %s Type (%s)' % (ch3_name, ch3_assist, ch3_point))
     
     
