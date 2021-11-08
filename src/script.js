@@ -4,11 +4,11 @@ function genChar1() {
     var min = Math.ceil(0);
     var max = Math.floor(55);
     do {
-        var first = Math.floor(Math.random() * (max - min + 1)) + min;
-  	}
-  	// Roll will never get picked
-  	while (first == 35);
-  	return first;
+       var first = Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    // Roll will never get picked
+    while (first == 35);
+    return first;
 }
 
 
@@ -19,10 +19,10 @@ function genChar2(chlist, id1, p1) {
     do {
         var second = Math.floor(Math.random() * (max - min + 1)) + min;
         ch2p = chlist[second]['points']
-  	}
-  	// Must be less points than difference from first and 7
-  	while (second == 35 || second == id1 + 1 || ch2p >= 7 - p1);
-  	return second;
+    }
+    // Must be less points than difference from first and 7
+    while (second == 35 || second == id1 + 1 || ch2p >= 7 - p1);
+    return second;
 }
 
 
@@ -35,16 +35,16 @@ function genChar3(chlist, id1, p1, id2, p2, max_ind) {
         do {
             var third = Math.floor(Math.random() * (max - min + 1)) + min;
             ch3p = chlist[third]['points']
-      	}
-      	while (third == 35 || third == id1 + 1 || third == id2 + 1 || p1 + p2 + ch3p !== 7);
+        }
+        while (third == 35 || third == id1 + 1 || third == id2 + 1 || p1 + p2 + ch3p !== 7);
     } else {
         do {
             var third = Math.floor(Math.random() * (max - min + 1)) + min;
             ch3p = chlist[third]['points']
-      	}
-      	while (third == 35 || third == id1 + 1 || third == id2 + 1 || ch3p > 7 - p1 - p2);
-  	}
-  	return third;
+        }
+        while (third == 35 || third == id1 + 1 || third == id2 + 1 || ch3p > 7 - p1 - p2);
+    }
+    return third;
 }
 
 
@@ -54,29 +54,29 @@ function genTeam(max_ind) {
     var all_characters = JSON.parse(characters);
     // First character
     var first = genChar1();
-  	var ch1 = all_characters[first];
-  	var ch1_name = ch1.name;
-  	var ch1_points = ch1.points;
-  	// Establish array for random list selection
-  	var assists = ['assist_1', 'assist_2', 'assist_3'];
-  	var rand_assist = Math.floor(Math.random() * assists.length);
-  	var ch1_assist = ch1[assists[rand_assist]];
+    var ch1 = all_characters[first];
+    var ch1_name = ch1.name;
+    var ch1_points = ch1.points;
+    // Establish array for random list selection
+    var assists = ['assist_1', 'assist_2', 'assist_3'];
+    var rand_assist = Math.floor(Math.random() * assists.length);
+    var ch1_assist = ch1[assists[rand_assist]];
     // Second character
     var second = genChar2(all_characters, first, ch1_points);
-  	var ch2 = all_characters[second];
-  	var ch2_name = ch2.name;
-  	var ch2_points = ch2.points;
-  	var rand_assist = Math.floor(Math.random() * assists.length);
-  	var ch2_assist = ch2[assists[rand_assist]];
+    var ch2 = all_characters[second];
+    var ch2_name = ch2.name;
+    var ch2_points = ch2.points;
+    var rand_assist = Math.floor(Math.random() * assists.length);
+    var ch2_assist = ch2[assists[rand_assist]];
     // Third character
     var third = genChar3(all_characters, first, ch1_points, second, ch2_points, max_ind);
-  	var ch3 = all_characters[third];
-  	var ch3_name = ch3.name;
-  	var ch3_points = ch3.points;
-  	var rand_assist = Math.floor(Math.random() * assists.length);
-  	var ch3_assist = ch3[assists[rand_assist]];
-  	// Sum all points
-  	const arr = [ch1_points, ch2_points, ch3_points];
+    var ch3 = all_characters[third];
+    var ch3_name = ch3.name;
+    var ch3_points = ch3.points;
+    var rand_assist = Math.floor(Math.random() * assists.length);
+    var ch3_assist = ch3[assists[rand_assist]];
+    // Sum all points
+    const arr = [ch1_points, ch2_points, ch3_points];
     const reducer = (a, b) => a + b;
     var total_points = arr.reduce(reducer);
     // Input text in labels
