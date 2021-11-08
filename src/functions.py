@@ -67,29 +67,29 @@ def gen_team():
     first = gen_char1()
     ch1 = all_characters[first]
     ch1_name = ch1[1]
-    ch1_point = ch1[2]
+    ch1_points = ch1[2]
     ch1_assist = ch1[random.randrange(0,2) + 3]
     # Get second character
     second = gen_char2(all_characters,
                       first,
-                      int(ch1_point))
+                      int(ch1_points))
     ch2 = all_characters[second]
     ch2_name = ch2[1]
-    ch2_point = ch2[2]
+    ch2_points = ch2[2]
     ch2_assist = ch2[random.randrange(0,2) + 3]
     # Get third character
     third = gen_char3(all_characters,
                      first,
-                     int(ch1_point),
+                     int(ch1_points),
                      second,
-                     int(ch2_point))
+                     int(ch2_points))
     ch3 = all_characters[third]
     ch3_name = ch3[1]
-    ch3_point = ch3[2]
+    ch3_points = ch3[2]
     ch3_assist = ch3[random.randrange(0,2) + 3]
-    print('%s, %s Type (%s)' % (ch1_name, ch1_assist, ch1_point))   
-    print('%s, %s Type (%s)' % (ch2_name, ch2_assist, ch2_point))    
-    print('%s, %s Type (%s)' % (ch3_name, ch3_assist, ch3_point))
+    print('%s, %s Type (%s)' % (ch1_name, ch1_assist, ch1_points))   
+    print('%s, %s Type (%s)' % (ch2_name, ch2_assist, ch2_points))    
+    print('%s, %s Type (%s)' % (ch3_name, ch3_assist, ch3_points))
 
 
 ################################################################################
@@ -114,7 +114,7 @@ def convert_json():
                       'assist_2': i[4],
                       'assist_3': i[5]
                       })
-    json.dump(dlist, open(jname, 'w', encoding = 'utf8'), indent = 2)  
+    json.dump(dlist, open(jname, 'w', encoding = 'utf8'))  
 
 
 # Generate Character 2
@@ -161,34 +161,34 @@ def gen_team2():
     first = gen_char1()
     ch1 = all_characters[first]
     ch1_name = ch1['name']
-    ch1_point = ch1['points']
+    ch1_points = ch1['points']
     ch1_assist = ch1[random.choice(['assist_1', 'assist_2', 'assist_3'])]
     # Get second character
     second = gen_char2j(all_characters,
                        first,
-                       ch1_point)
+                       ch1_points)
     ch2 = all_characters[second]
     ch2_name = ch2['name']
-    ch2_point = ch2['points']
+    ch2_points = ch2['points']
     ch2_assist = ch2[random.choice(['assist_1', 'assist_2', 'assist_3'])]
     # Get third character
     third = gen_char3j(all_characters,
                       first,
-                      ch1_point,
+                      ch1_points,
                       second,
-                      ch2_point)
+                      ch2_points)
     ch3 = all_characters[third]
     ch3_name = ch3['name']
-    ch3_point = ch3['points']
+    ch3_points = ch3['points']
     ch3_assist = ch3[random.choice(['assist_1', 'assist_2', 'assist_3'])]
-    print('%s, %s Type (%s)' % (ch1_name, ch1_assist, ch1_point))    
-    print('%s, %s Type (%s)' % (ch2_name, ch2_assist, ch2_point))    
-    print('%s, %s Type (%s)' % (ch3_name, ch3_assist, ch3_point))
+    print('%s, %s Type (%s)' % (ch1_name, ch1_assist, ch1_points))    
+    print('%s, %s Type (%s)' % (ch2_name, ch2_assist, ch2_points))    
+    print('%s, %s Type (%s)' % (ch3_name, ch3_assist, ch3_points))
     
     
 #gen_team()
-gen_team2()
-#convert_json()
+#gen_team2()
+convert_json()
 
 
 

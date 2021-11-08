@@ -1,15 +1,30 @@
 <!doctype html>
-<header>
-    <meta charset="utf-8">
-    <script src="static/script.js"></script>
-</header>
-<section>
-    <h1>MVC2 7-Point Team Randomizer</h1>
-    <p>
-        <button id="button1" onclick="dev01()">Generate Team</button><br><br>
-        <label id="char1"></label><br>
-        <label id="char2"></label><br>
-        <label id="char3"></label><br>
-    </p>
-</section>
+    <header>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="src/script.js"></script>
+        <script type="text/javascript" src="src/characters.js"></script>
+    </header>
+    <main>
+        <section>
+            <h1>MVC2 7-Point Team Randomizer</h1>
+            <p>
+                This app will pick a randomized team in MVC2 based on the <a href="https://twitter.com/jwonggg/status/1372059892270305280?lang=en">7-Point Team<a> idea first proposed by <a href="https://twitter.com/JWonggg">Justin Wong</a> on 17 March 2021.<br><br>Some notes:<br>- Roll will NEVER get picked unless enough people suggest it.<br>- The first button will generate a team that will always equal 7 points.<br>- The other button will generate a team that may or may not add up to 7, but will never be more.
+            </p>
+            <p>
+                <button id="button1" onclick="genTeam(0)">Generate Team - Always 7 Points</button><button id="button2" onclick="genTeam(1)">Generate Team - Points <= 7</button>
+            </p>
+            <p>
+                <label id="char1"></label><br>
+                <label id="char2"></label><br>
+                <label id="char3"></label><br><br>
+                <label id="total"><b></b></label>
+            </p>
+            <img src="src/tier_list.jpg">
+        </section>
+    </main>
+    <footer>
+        <p>
+            Please go <a href="https://github.com/smatsushima1/mvc2_rgen">here</a> to see all source code for the above. All suggestions and comments are welcome! Please create an issue in the GitHub repository listed in the previous link for any bugs or ideas for improvement. This is distributed under the terms of the <a href="http://www.gnu.org/licenses/gpl.txt">GNU General Public License</a>.<br><br>Lastly, thank you to <a href="https://twitter.com/JWonggg">Justin Wong</a>, <a href="https://twitter.com/maximilian_">Maximillion Dood</a>, and the FGC for inspiring me to create this. Happy fighting!<br><br>Copyright 2021 Spencer Matsushima.
+        </p>
+    </footer>
 </html>
