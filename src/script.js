@@ -90,4 +90,3 @@ function genTeam(max_ind) {
     total.innerHTML = 'TOTAL POINTS: ' + total_points;
 }
 
-

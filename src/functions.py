@@ -152,7 +152,7 @@ def gen_char3j(chlist, id1, p1, id2, p2):
     
 
 # Generate Team
-def gen_team2():
+def gen_teamj():
     # Get list of all characters and their associated data
     with open('characters.json', 'r') as file:
         all_characters = json.load(file)
@@ -184,14 +184,4 @@ def gen_team2():
     print('%s, %s Type (%s)' % (ch1_name, ch1_assist, ch1_points))    
     print('%s, %s Type (%s)' % (ch2_name, ch2_assist, ch2_points))    
     print('%s, %s Type (%s)' % (ch3_name, ch3_assist, ch3_points))
-    
-    
-#gen_team()
-#gen_team2()
-convert_json()
-
-
-
-
-
 
