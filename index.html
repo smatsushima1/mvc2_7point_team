@@ -8,13 +8,13 @@
         <section>
             <h1>MVC2 7-Point Team Randomizer</h1>
             <p>
-                This app will pick a randomized team in MVC2 based on the <a href="https://twitter.com/jwonggg/status/1372059892270305280?lang=en">7-Point Team<a> idea first proposed by <a href="https://twitter.com/JWonggg">Justin Wong</a> on 17 March 2021.<br><br>Some notes:<br>- Roll will NEVER get picked unless enough people suggest it.<br>- The first button will generate a team that will always equal 7 points.<br>- The other button will generate a team that may or may not add up to 7, but will never be more.
+                This app will pick a randomized team in MVC2 based on the <a href="https://twitter.com/jwonggg/status/1372059892270305280?lang=en">7-Point Team<a> idea first proposed by <a href="https://twitter.com/JWonggg">Justin Wong</a> on 17 March 2021.<br><br>Some notes:<br>- Roll will NEVER get picked unless enough people suggest it.<br>- Duplicates will not be chosen.<br>- The first button will generate a team that will always equal 7 points.<br>- The other button will generate a team that may or may not add up to 7, but will never be more.<br>- Format for characters chosen below will be: CHARACTER, ASSIST TYPE
             </p>
             <p>
                 <button id="button1" onclick="genTeam(0)">Generate Team - Always 7 Points</button><button id="button2" onclick="genTeam(1)">Generate Team - Points <= 7</button>
             </p>
             <p>
-                <label id="char1"></label><br>
+                <label id="char1">Click buttons above to begin!</label><br>
                 <label id="char2"></label><br>
                 <label id="char3"></label><br><br>
                 <label id="total"><b></b></label>
